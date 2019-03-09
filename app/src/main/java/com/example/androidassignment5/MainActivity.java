@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         // TO-DO: Create a reference to the ListView widget.
         this.listView = (ListView)findViewById(R.id._dynamic);
         initListView();
+      //  addItem = "Hello";
         //submitButton.setOnClickListener(new View.OnClickListener() {
             //@Override
             //public void onClick(View v) {
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         //});
     }
 
-    public void initListView() {
+    private void initListView() {
         // TO-DO:
         // 1. Create an ArrayAdapter and add String data to it. Use .add
         // 2. Set the adaptor for the ListView
@@ -45,17 +46,17 @@ public class MainActivity extends AppCompatActivity {
         newArray.add("First Custom Item");
         newArray.add("Second Custom Item");
         newArray.add("Third Custom Item");
-        if(addItem()){
-            newArray.add(addItem);
-        }
+        //if(addItem()){
+     //       newArray.add(addItem);
+        //}
         // TO-DO: Set the adaptor for the ListView
         this.listView.setAdapter(newArray);
     }
     private boolean addItem(){
-        if(submitButton != null){
+        //if(submitButton != null){
             return true;
-        }else{
-            return false;
-        }
+        //}else{
+            //return false;
+        //}
     }
 }
